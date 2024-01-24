@@ -25,3 +25,7 @@
     padding: 1rem;
     display: inline-block;
 }
+
+.navbar .navbar__content .navbar__links a:hover {
+   color: var(--tertiary-color);
+}
