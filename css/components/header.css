@@ -41,3 +41,9 @@ header .header__right .header__image .fernando {
     max-width: 100%;
 }
 
+header .header__right .header__image .background {
+    position: absolute;
+    top: -4rem;
+    right: -2.5rem;
+    z-index: -1;
+}
