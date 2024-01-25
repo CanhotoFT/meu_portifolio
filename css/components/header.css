@@ -5,23 +5,23 @@ header {
     gap: 4rem;
     scroll-margin-top: 20rem;
 }
-
+  
 header .header__left {
     max-width: 62rem;
     flex: 1;
 }
-
-header .header__left p{
+  
+header .header__left p {
     margin-top: 2rem;
     margin-bottom: 4rem;
     max-width: 50rem;
 }
-
+  
 header .header__right .header__image {
     position: relative;
     line-height: 0;
 }
-
+  
 header .header__right .header__image::after {
     content: '';
     display: block;
@@ -34,16 +34,27 @@ header .header__right .header__image::after {
     border-radius: 0.5rem;
     z-index: -1;
 }
-
+  
 header .header__right .header__image .fernando {
     border-radius: 0.5rem;
     min-width: 25rem;
     max-width: 100%;
 }
-
+  
 header .header__right .header__image .background {
     position: absolute;
     top: -4rem;
     right: -2.5rem;
     z-index: -1;
+}
+  
+@media only screen and (max-width: 768px) {
+    header {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    header .header__left p {
+      margin: 2rem auto 4rem;
+    }
 }
